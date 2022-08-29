@@ -1,0 +1,24 @@
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 {/home/t107360216/Desktop/2022_summer/Lab2a/fa.fsdb}
+wvZoomIn -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/fa_test"
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/fa_test/a} \
+{/fa_test/b} \
+{/fa_test/ci} \
+{/fa_test/clk} \
+{/fa_test/cout} \
+{/fa_test/sum} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 5 6 )} 
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvGetSignalClose -win $_nWave1
+wvZoomAll -win $_nWave1
+wvSetCursor -win $_nWave1 3713.114046 -snap {("G2" 0)}
+wvExit

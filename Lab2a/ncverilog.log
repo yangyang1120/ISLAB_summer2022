@@ -1,0 +1,29 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Aug 27, 2022 at 02:32:11 CST
+ncverilog
+	-f run.f
+		fa_test.v
+		fa.v
+		ha.v
+		+access+r
+Loading snapshot worklib.fa_test:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'fa.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+
+
+***********************
+function test pass !!
+***********************
+
+
+Simulation complete via $finish(1) at time 66 NS + 0
+./fa_test.v:83 		$finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Aug 27, 2022 at 02:32:13 CST  (total: 00:00:02)

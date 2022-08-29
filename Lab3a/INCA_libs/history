@@ -1,0 +1,12 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(27Aug2022:14:04:05):( ncverilog -f run.f )
+s2::(27Aug2022:14:04:45):( ncverilog -f run.f )
+s3::(27Aug2022:14:05:21):( ncverilog -f run.f )
+s4::(27Aug2022:14:13:37):( ncverilog -f run.f )
+s5::(27Aug2022:14:34:50):( ncverilog -f run.f )
+s6::(27Aug2022:14:35:50):( ncverilog -f run.f )
+s7::(27Aug2022:14:36:14):( ncverilog -f run.f )
+s8::(27Aug2022:14:41:21):( ncverilog -f run.f )

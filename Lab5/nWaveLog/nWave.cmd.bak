@@ -1,0 +1,43 @@
+wvRestoreSignal -win $_nWave1 \
+           "/home/t107360216/Desktop/2022_summer/Lab5/signal.rc" \
+           -overWriteAutoAlias on -appendSignals on
+wvSelectSignal -win $_nWave1 {( "G2" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 5 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 5 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSelectSignal -win $_nWave1 {( "G3" 5 )} 
+wvSelectSignal -win $_nWave1 {( "G3" 5 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSetCursor -win $_nWave1 5433.974138 -snap {("G3" 7)}
+wvSelectSignal -win $_nWave1 {( "G3" 6 )} 
+wvSetCursor -win $_nWave1 5365.189655 -snap {("G2" 3)}
+wvSetCursor -win $_nWave1 9758.225287 -snap {("G2" 5)}
+wvSelectSignal -win $_nWave1 {( "G2" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 2 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSetCursor -win $_nWave1 12437.954095 -snap {("G1" 3)}
+wvSetCursor -win $_nWave1 8574.558980 -snap {("G3" 7)}
+wvSelectSignal -win $_nWave1 {( "G3" 7 )} 
+wvSelectSignal -win $_nWave1 {( "G3" 7 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSetCursor -win $_nWave1 10752.734267 -snap {("G4" 0)}
+wvSelectSignal -win $_nWave1 {( "G2" 3 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 2 )} 
+wvSetCursor -win $_nWave1 21477.583288 -snap {("G3" 7)}
+wvSetCursor -win $_nWave1 22440.566046 -snap {("G3" 7)}
+wvSetCursor -win $_nWave1 21523.439610 -snap {("G1" 4)}
+wvSetCursor -win $_nWave1 12507.617685 -snap {("G3" 6)}
+wvSetCursor -win $_nWave1 13516.456765 -snap {("G3" 7)}
+wvSetCursor -win $_nWave1 13482.064524 -snap {("G1" 3)}
+wvSelectSignal -win $_nWave1 {( "G3" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G3" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G3" 2 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSetCursor -win $_nWave1 22536.634167 -snap {("G3" 7)}
+wvSetCursor -win $_nWave1 23705.970373 -snap {("G2" 4)}
+wvSelectSignal -win $_nWave1 {( "G2" 5 )} 
+wvSelectSignal -win $_nWave1 {( "G3" 5 )} 
+wvSetCursor -win $_nWave1 14452.170453 -snap {("G3" 5)}
+wvSelectSignal -win $_nWave1 {( "G2" 5 )} 
+wvSetCursor -win $_nWave1 20245.543513 -snap {("G3" 1)}
+wvSelectSignal -win $_nWave1 {( "G3" 5 )} 

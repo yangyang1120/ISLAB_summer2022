@@ -1,0 +1,30 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Aug 27, 2022 at 00:11:34 CST
+ncverilog
+	-f run.f
+		mux_test.v
+		mux.v
+		+access+r
+Loading snapshot worklib.mux_test:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'mux.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+                   0  a = x,  b = x,  sel = x,   out = x
+                  10  a = 0,  b = 0,  sel = 0,   out = 0
+                  20  a = 1,  b = 0,  sel = 1,   out = 0
+                  30  a = 1,  b = 1,  sel = 0,   out = 1
+                  40  a = 0,  b = 1,  sel = 1,   out = 1
+                  50  a = 0,  b = 1,  sel = 0,   out = 0
+                  60  a = 1,  b = 0,  sel = 0,   out = 1
+                  70  a = 0,  b = 0,  sel = 1,   out = 0
+                  80  a = 1,  b = 1,  sel = 1,   out = 1
+Simulation complete via $finish(1) at time 100 NS + 0
+./mux_test.v:22   	#20 $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Aug 27, 2022 at 00:12:06 CST  (total: 00:00:32)

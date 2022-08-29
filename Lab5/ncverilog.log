@@ -1,0 +1,130 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Aug 29, 2022 at 12:02:22 CST
+ncverilog
+	testfixture.v
+	LBP.v
+	+access+r
+Recompiling... reason: file './LBP.v' is newer than expected.
+	expected: Mon Aug 29 12:00:51 2022
+	actual:   Mon Aug 29 12:02:19 2022
+file: LBP.v
+	module worklib.LBP:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.LBP:v <0x59ec5381>
+			streams:  19, words:  7708
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  4       4
+		Registers:               28      28
+		Scalar wires:             6       -
+		Vectored wires:           9       -
+		Always blocks:           14      14
+		Initial blocks:          14      14
+		Cont. assignments:        3       5
+		Pseudo assignments:       1       1
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.testfixture:v
+Loading snapshot worklib.testfixture:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+ncsim: *W,RMEMAR: $readmem warning: address incremented out of range. Too many data words read
+	at line 1 of file "./golden1.dat". Current address: 63, address range: [0:62].
+            File: ./testfixture.v, line = 41, pos = 31
+           Scope: testfixture
+            Time: 0 FS + 0
+
+FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'LBP.fsdb'
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+-----------------------------------------------------
+
+START!!! Simulation Start .....
+
+-----------------------------------------------------
+
+pixel           0 is CORRECT !! expected result is   0
+pixel           1 is CORRECT !! expected result is   0
+pixel           2 is CORRECT !! expected result is   0
+pixel           3 is CORRECT !! expected result is   0
+pixel           4 is CORRECT !! expected result is   0
+pixel           5 is CORRECT !! expected result is   0
+pixel           6 is CORRECT !! expected result is   0
+pixel           7 is CORRECT !! expected result is   0
+pixel           8 is CORRECT !! expected result is   0
+pixel           9 is CORRECT !! expected result is 255
+pixel          10 is CORRECT !! expected result is 192
+pixel          11 is CORRECT !! expected result is 236
+pixel          12 is CORRECT !! expected result is 254
+pixel          13 is CORRECT !! expected result is 150
+pixel          14 is CORRECT !! expected result is 214
+pixel          15 is CORRECT !! expected result is   0
+pixel          16 is CORRECT !! expected result is   0
+pixel          17 is CORRECT !! expected result is 244
+pixel          18 is CORRECT !! expected result is  16
+pixel          19 is CORRECT !! expected result is   8
+pixel          20 is CORRECT !! expected result is 252
+pixel          21 is CORRECT !! expected result is 246
+pixel          22 is CORRECT !! expected result is 150
+pixel          23 is CORRECT !! expected result is   0
+pixel          24 is CORRECT !! expected result is   0
+pixel          25 is CORRECT !! expected result is 252
+pixel          26 is CORRECT !! expected result is 246
+pixel          27 is CORRECT !! expected result is  99
+pixel          28 is CORRECT !! expected result is 105
+pixel          29 is CORRECT !! expected result is 252
+pixel          30 is CORRECT !! expected result is 150
+pixel          31 is CORRECT !! expected result is   0
+pixel          32 is CORRECT !! expected result is   0
+pixel          33 is CORRECT !! expected result is 248
+pixel          34 is CORRECT !! expected result is  96
+pixel          35 is CORRECT !! expected result is  40
+pixel          36 is CORRECT !! expected result is 105
+pixel          37 is CORRECT !! expected result is 253
+pixel          38 is CORRECT !! expected result is 150
+pixel          39 is CORRECT !! expected result is   0
+pixel          40 is CORRECT !! expected result is   0
+pixel          41 is CORRECT !! expected result is   0
+pixel          42 is CORRECT !! expected result is   8
+pixel          43 is CORRECT !! expected result is  43
+pixel          44 is CORRECT !! expected result is  41
+pixel          45 is CORRECT !! expected result is  61
+pixel          46 is CORRECT !! expected result is 150
+pixel          47 is CORRECT !! expected result is   0
+pixel          48 is CORRECT !! expected result is   0
+pixel          49 is CORRECT !! expected result is   7
+pixel          50 is CORRECT !! expected result is  11
+pixel          51 is CORRECT !! expected result is  43
+pixel          52 is CORRECT !! expected result is  43
+pixel          53 is CORRECT !! expected result is  63
+pixel          54 is CORRECT !! expected result is 151
+pixel          55 is CORRECT !! expected result is   0
+pixel          56 is CORRECT !! expected result is   0
+pixel          57 is CORRECT !! expected result is   0
+pixel          58 is CORRECT !! expected result is   0
+pixel          59 is CORRECT !! expected result is   0
+pixel          60 is CORRECT !! expected result is   0
+pixel          61 is CORRECT !! expected result is   0
+pixel          62 is CORRECT !! expected result is   0
+-----------------------------------------------------
+
+Congratulations! All data have been generated successfully!
+
+-------------------------PASS------------------------
+
+Simulation complete via $finish(1) at time 3655 NS + 0
+./testfixture.v:85       #(`CYCLE/2); $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Aug 29, 2022 at 12:02:54 CST  (total: 00:00:32)

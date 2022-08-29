@@ -1,0 +1,68 @@
+@verdi rc file Version 1.0
+[General]
+saveDB = TRUE
+relativePath = FALSE
+saveSingleView = FALSE
+saveNWaveWinId = 
+VerdiVersion = Verdi_Q-2020.03
+[KeyNote]
+Line1 = Automatic Backup 0
+Line2 = Save Open Database Information: Yes
+Line3 = Path Option: Absolute Paths
+Line4 = Windows Option: All Windows
+[OneSearch]
+isExisted = TRUE
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+Console = FALSE
+powerDumped = 0
+[fusa]
+fdb_server = 
+fdb_proj = 
+fdb_campaign = 
+fdb_tool = 
+[hb]
+postSimFile = /home/t107360216/Desktop/2022_summer/Lab4b/SDAM.fsdb
+syncTime = 5450000
+viewport = 62 31 900 693 0 0 227 898
+activeNode = "testfixture"
+activeScope = "testfixture"
+activeFile = "testbench.v"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 6
+baMode = False
+srcLineNum = True
+AutoWrap = True
+IdentifyFalseLogic = False
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = False
+powerAwareAnnot = True
+amsAnnot = True
+traceCrossHier = True
+DnDtraceCrossHierOnly = True
+traceIncTopPort = False
+leadingZero = False
+signalPane = False
+Scope1 = "testfixture"
+multipleSelection = 1 6 2 0 0
+sdfCheckUndef = FALSE
+simFlow = FALSE
+[hb.design]
+importCmd = "-f" "run.f" 
+invokeDir = /home/t107360216/Desktop/2022_summer/Lab4b
+[hb.sourceTab.1]
+scope = testfixture
+File = /home/t107360216/Desktop/2022_summer/Lab4b/testbench.v
+Line = 7
+[nMemoryManager]
+WaveformFile = /home/t107360216/Desktop/2022_summer/Lab4b/SDAM.fsdb
+UserActionNum = 0
+nMemWindowNum = 0

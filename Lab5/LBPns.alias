@@ -1,0 +1,19 @@
+alias	LBP.ns
+  IDLE		3'd0		NULL
+  RDGC		3'd1		NULL
+  RDGP		3'd2		NULL
+  WD		3'd3		NULL
+  FINISH		3'd4		NULL
+endalias
+
+alias	LBP.cs
+  IDLE		3'd0		NULL
+  RDGC		3'd1		NULL
+  RDGP		3'd2		NULL
+  WD		3'd3		NULL
+  FINISH		3'd4		NULL
+endalias
+
+alias	alias_tab_1
+endalias
+

@@ -1,0 +1,10 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(24Aug2022:19:47:37):( ncverilog mux_test.v mux.v +access+r )
+s2::(24Aug2022:19:47:52):( ncverilog mux_test.v mux.v +access+r )
+s3::(24Aug2022:19:48:03):( ncverilog mux_test.v mux.v +access+r )
+s4::(24Aug2022:19:48:53):( ncverilog mux_test.v mux.v +access+r )
+s5::(26Aug2022:21:39:16):( ncverilog -f run.f )
+s6::(27Aug2022:00:11:34):( ncverilog -f run.f )

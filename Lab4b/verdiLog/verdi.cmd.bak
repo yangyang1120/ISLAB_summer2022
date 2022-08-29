@@ -1,0 +1,222 @@
+debImport "-f" "run.f" -autoalias
+debLoadSimResult /home/t107360216/Desktop/2022_summer/Lab4b/SDAM.fsdb
+wvCreateWindow
+wvSetCursor -win $_nWave2 5338248.871650
+verdiWindowBeWindow -win $_nWave2
+wvResizeWindow -win $_nWave2 0 23 1024 641
+wvResizeWindow -win $_nWave2 0 23 1024 641
+wvSetCursor -win $_nWave2 6753721.441321
+wvGetSignalOpen -win $_nWave2
+wvGetSignalSetScope -win $_nWave2 "/testfixture"
+wvGetSignalSetScope -win $_nWave2 "/testfixture/u_SDAM"
+wvSetPosition -win $_nWave2 {("G1" 9)}
+wvSetPosition -win $_nWave2 {("G1" 9)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/testfixture/u_SDAM/scl} \
+{/testfixture/u_SDAM/reset_n} \
+{/testfixture/u_SDAM/sda} \
+{/testfixture/u_SDAM/cs\[2:0\]} \
+{/testfixture/u_SDAM/avalid} \
+{/testfixture/u_SDAM/aout\[7:0\]} \
+{/testfixture/u_SDAM/dvalid} \
+{/testfixture/u_SDAM/dout\[15:0\]} \
+{/testfixture/u_SDAM/cnt\[4:0\]} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+}
+wvSelectSignal -win $_nWave2 {( "G1" 9 )} 
+wvSetPosition -win $_nWave2 {("G1" 9)}
+wvSetPosition -win $_nWave2 {("G1" 9)}
+wvSetPosition -win $_nWave2 {("G1" 9)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/testfixture/u_SDAM/scl} \
+{/testfixture/u_SDAM/reset_n} \
+{/testfixture/u_SDAM/sda} \
+{/testfixture/u_SDAM/cs\[2:0\]} \
+{/testfixture/u_SDAM/avalid} \
+{/testfixture/u_SDAM/aout\[7:0\]} \
+{/testfixture/u_SDAM/dvalid} \
+{/testfixture/u_SDAM/dout\[15:0\]} \
+{/testfixture/u_SDAM/cnt\[4:0\]} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+}
+wvSelectSignal -win $_nWave2 {( "G1" 9 )} 
+wvSetPosition -win $_nWave2 {("G1" 9)}
+wvGetSignalClose -win $_nWave2
+wvRemoveGrid -win $_nWave2
+wvGridSetStartNum -win $_nWave2 1
+wvDisplayGridCount -win $_nWave2 -off
+wvGridSetLockCount -win $_nWave2 -off
+wvGridRisingEdge -win $_nWave2
+wvRemoveGrid -win $_nWave2
+wvGridSetStartNum -win $_nWave2 1
+wvDisplayGridCount -win $_nWave2 -off
+wvGridSetLockCount -win $_nWave2 -off
+wvGridRisingEdge -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvRemoveGrid -win $_nWave2
+wvGridSetStartNum -win $_nWave2 1
+wvDisplayGridCount -win $_nWave2 -off
+wvGridSetLockCount -win $_nWave2 -off
+wvGridBothEdge -win $_nWave2
+wvRemoveGrid -win $_nWave2
+wvGridSetStartNum -win $_nWave2 1
+wvDisplayGridCount -win $_nWave2 -off
+wvGridSetLockCount -win $_nWave2 -off
+wvGridRisingEdge -win $_nWave2
+wvRemoveGrid -win $_nWave2
+wvGridSetStartNum -win $_nWave2 1
+wvDisplayGridCount -win $_nWave2 -off
+wvGridSetLockCount -win $_nWave2 -off
+wvGridFallingEdge -win $_nWave2
+wvRemoveGrid -win $_nWave2
+wvGridSetStartNum -win $_nWave2 1
+wvDisplayGridCount -win $_nWave2 -off
+wvGridSetLockCount -win $_nWave2 -off
+wvGridRisingEdge -win $_nWave2
+wvRemoveGrid -win $_nWave2
+wvGridSetStartNum -win $_nWave2 1
+wvDisplayGridCount -win $_nWave2 -off
+wvGridSetLockCount -win $_nWave2 -off
+wvGridFallingEdge -win $_nWave2
+wvRemoveGrid -win $_nWave2
+wvGridSetStartNum -win $_nWave2 1
+wvDisplayGridCount -win $_nWave2 -off
+wvGridSetLockCount -win $_nWave2 -off
+wvGridBothEdge -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G1" 1 )} 
+wvRemoveGrid -win $_nWave2
+wvGridSetStartNum -win $_nWave2 1
+wvDisplayGridCount -win $_nWave2 -off
+wvGridSetLockCount -win $_nWave2 -off
+wvGridFallingEdge -win $_nWave2
+wvRemoveGrid -win $_nWave2
+wvGridSetStartNum -win $_nWave2 1
+wvDisplayGridCount -win $_nWave2 -off
+wvGridSetLockCount -win $_nWave2 -off
+wvGridRisingEdge -win $_nWave2
+wvRemoveGrid -win $_nWave2
+wvGridSetStartNum -win $_nWave2 1
+wvDisplayGridCount -win $_nWave2 -off
+wvGridSetLockCount -win $_nWave2 -off
+wvGridRisingEdge -win $_nWave2
+wvRemoveGrid -win $_nWave2
+wvGridSetStartNum -win $_nWave2 1
+wvDisplayGridCount -win $_nWave2 -off
+wvGridSetLockCount -win $_nWave2 -off
+wvGridRisingEdge -win $_nWave2
+wvRemoveGrid -win $_nWave2
+wvGridSetStartNum -win $_nWave2 1
+wvDisplayGridCount -win $_nWave2 -off
+wvGridSetLockCount -win $_nWave2 -off
+wvRemoveGrid -win $_nWave2
+wvGridSetStartNum -win $_nWave2 1
+wvDisplayGridCount -win $_nWave2 -off
+wvGridSetLockCount -win $_nWave2 -off
+wvSetCursor -win $_nWave2 553964.381484 -snap {("G1" 1)}
+wvSelectSignal -win $_nWave2 {( "G1" 6 )} 
+wvSetCursor -win $_nWave2 3455487.933209 -snap {("G1" 3)}
+wvSetCursor -win $_nWave2 300202.254636 -snap {("G1" 2)}
+wvSetCursor -win $_nWave2 348300.958418 -snap {("G1" 1)}
+wvSetCursor -win $_nWave2 248786.398870 -snap {("G1" 1)}
+wvSelectSignal -win $_nWave2 {( "G1" 9 )} 
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvSetPosition -win $_nWave2 {("G1" 4)}
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvSetPosition -win $_nWave2 {("G1" 4)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("G1" 4)}
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvSetCursor -win $_nWave2 349959.534410 -snap {("G1" 1)}
+wvSetCursor -win $_nWave2 444498.365981 -snap {("G1" 1)}
+wvSetCursor -win $_nWave2 544012.925529 -snap {("G1" 1)}
+wvSetCursor -win $_nWave2 442839.789988 -snap {("G1" 2)}
+wvSetCursor -win $_nWave2 457766.973921 -snap {("G1" 1)}
+wvSetCursor -win $_nWave2 557281.533469 -snap {("G1" 1)}
+srcHBSelect "testfixture" -win $_nTrace1
+srcHBSelect "testfixture" -win $_nTrace1
+srcSetScope -win $_nTrace1 "testfixture" -delim "."
+srcHBSelect "testfixture" -win $_nTrace1
+srcHBSelect "testfixture.u_SDAM" -win $_nTrace1
+srcHBSelect "testfixture.u_SDAM" -win $_nTrace1
+srcSetScope -win $_nTrace1 "testfixture.u_SDAM" -delim "."
+srcHBSelect "testfixture.u_SDAM" -win $_nTrace1
+wvSetCursor -win $_nWave2 1313592.186033 -snap {("G1" 5)}
+wvSetCursor -win $_nWave2 1323543.641988 -snap {("G2" 0)}
+wvSetCursor -win $_nWave2 3051374.962089 -snap {("G1" 4)}
+wvSetCursor -win $_nWave2 2951860.402541 -snap {("G1" 1)}
+wvSetCursor -win $_nWave2 3051374.962089 -snap {("G1" 4)}
+wvSetCursor -win $_nWave2 3140938.065682 -snap {("G1" 4)}
+wvGetSignalOpen -win $_nWave2
+wvGetSignalSetScope -win $_nWave2 "/testfixture"
+wvGetSignalSetScope -win $_nWave2 "/testfixture/u_SDAM"
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/testfixture/u_SDAM/scl} \
+{/testfixture/u_SDAM/reset_n} \
+{/testfixture/u_SDAM/sda} \
+{/testfixture/u_SDAM/cs\[2:0\]} \
+{/testfixture/u_SDAM/ns\[2:0\]} \
+{/testfixture/u_SDAM/cnt\[4:0\]} \
+{/testfixture/u_SDAM/avalid} \
+{/testfixture/u_SDAM/aout\[7:0\]} \
+{/testfixture/u_SDAM/dvalid} \
+{/testfixture/u_SDAM/dout\[15:0\]} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+}
+wvSelectSignal -win $_nWave2 {( "G1" 5 )} 
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/testfixture/u_SDAM/scl} \
+{/testfixture/u_SDAM/reset_n} \
+{/testfixture/u_SDAM/sda} \
+{/testfixture/u_SDAM/cs\[2:0\]} \
+{/testfixture/u_SDAM/ns\[2:0\]} \
+{/testfixture/u_SDAM/cnt\[4:0\]} \
+{/testfixture/u_SDAM/avalid} \
+{/testfixture/u_SDAM/aout\[7:0\]} \
+{/testfixture/u_SDAM/dvalid} \
+{/testfixture/u_SDAM/dout\[15:0\]} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+}
+wvSelectSignal -win $_nWave2 {( "G1" 5 )} 
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvGetSignalClose -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcAction -pos 75 8 3 -win $_nTrace1 -name "5'd23" -ctrlKey off
+wvSetCursor -win $_nWave2 3829247.102555 -snap {("G2" 0)}
+wvSelectSignal -win $_nWave2 {( "G1" 6 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 6 )} 
+wvSetRadix -win $_nWave2 -format UDec
+wvSetCursor -win $_nWave2 3130986.609727 -snap {("G1" 4)}
+wvSetCursor -win $_nWave2 3130986.609727 -snap {("G1" 4)}
+wvSetCursor -win $_nWave2 3122693.729765 -snap {("G1" 5)}
+wvSelectSignal -win $_nWave2 {( "G1" 4 )} 
+wvSetCursor -win $_nWave2 2915371.730707 -snap {("G2" 0)}
+wvSetCursor -win $_nWave2 2915371.730707 -snap {("G2" 0)}
+wvSetCursor -win $_nWave2 3003276.258307 -snap {("G1" 6)}
+wvSetCursor -win $_nWave2 2996641.954337 -snap {("G1" 3)}
+wvSetCursor -win $_nWave2 2996641.954337 -snap {("G1" 3)}
+wvSetCursor -win $_nWave2 2950201.826548 -snap {("G1" 5)}
+wvSetCursor -win $_nWave2 3048057.810104 -snap {("G1" 3)}
+wvSetCursor -win $_nWave2 3051374.962089 -snap {("G1" 4)}
+wvSetCursor -win $_nWave2 2950201.826548 -snap {("G1" 5)}
+srcDeselectAll -win $_nTrace1

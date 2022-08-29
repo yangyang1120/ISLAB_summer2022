@@ -1,0 +1,56 @@
+wvResizeWindow -win $_nWave1 0 23 1024 641
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 {/home/t107360216/Desktop/2022_summer/Lab4b/SDAM.fsdb}
+wvSetCursor -win $_nWave1 3557831.092437
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/testfixture"
+wvGetSignalSetScope -win $_nWave1 "/testfixture/u_SDAM"
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testfixture/u_SDAM/scl} \
+{/testfixture/u_SDAM/reset_n} \
+{/testfixture/u_SDAM/cs\[2:0\]} \
+{/testfixture/u_SDAM/ns\[2:0\]} \
+{/testfixture/u_SDAM/sda} \
+{/testfixture/u_SDAM/aout\[7:0\]} \
+{/testfixture/u_SDAM/avalid} \
+{/testfixture/u_SDAM/dout\[15:0\]} \
+{/testfixture/u_SDAM/dvalid} \
+{/testfixture/u_SDAM/cnt\[4:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testfixture/u_SDAM/scl} \
+{/testfixture/u_SDAM/reset_n} \
+{/testfixture/u_SDAM/cs\[2:0\]} \
+{/testfixture/u_SDAM/ns\[2:0\]} \
+{/testfixture/u_SDAM/sda} \
+{/testfixture/u_SDAM/aout\[7:0\]} \
+{/testfixture/u_SDAM/avalid} \
+{/testfixture/u_SDAM/dout\[15:0\]} \
+{/testfixture/u_SDAM/dvalid} \
+{/testfixture/u_SDAM/cnt\[4:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvGetSignalClose -win $_nWave1
+wvZoomAll -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSetCursor -win $_nWave1 301496.848739 -snap {("G1" 2)}
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSetCursor -win $_nWave1 1630186.449580 -snap {("G2" 0)}
+wvExit

@@ -1,0 +1,1 @@
+debImport "-v" "testfixture.v" "-v" "LBP.v" -autoalias

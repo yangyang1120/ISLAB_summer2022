@@ -1,0 +1,102 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Aug 27, 2022 at 10:22:12 CST
+ncverilog
+	-f run.f
+		rca16_test.v
+		rca16.v
+		rca4.v
+		fa.v
+		ha.v
+		+access+r
+Recompiling... reason: file './rca4.v' is newer than expected.
+	expected: Sat Aug 27 10:07:44 2022
+	actual:   Sat Aug 27 10:22:06 2022
+file: rca4.v
+	module worklib.rca4:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.rca16_test:v <0x07ae9dc1>
+			streams:   8, words: 80607
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:             54       5
+		Primitives:          80       3
+		Registers:            5       5
+		Scalar wires:         1       -
+		Expanded wires:      32       2
+		Always blocks:        1       1
+		Initial blocks:       4       4
+		Pseudo assignments:   3       3
+	Writing initial simulation snapshot: worklib.rca16_test:v
+Loading snapshot worklib.rca16_test:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+=== Testing Start ===
+FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'rca16.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+                  30 a=0000000000000000, b=0000000000000000, c_in=0
+                  30 Expected Result : sum=0, c_out=0 
+                  30 Real Result : sum=0000000000000000, c_out=0 
+                  30 ================================= 
+                  70 a=0000000000000000, b=0000000000000000, c_in=1
+                  70 Expected Result : sum=1, c_out=0 
+                  70 Real Result : sum=0000000000000001, c_out=0 
+                  70 ================================= 
+                 110 a=0000000000000000, b=1111111111111111, c_in=0
+                 110 Expected Result : sum=16'hffff, c_out=0 
+                 110 Real Result : sum=1111111111111111, c_out=0 
+                 110 ================================= 
+                 150 a=0000000000000000, b=1111111111111111, c_in=1
+                 150 Expected Result : sum=0, c_out=1 
+                 150 Real Result : sum=0000000000000000, c_out=1 
+                 150 ================================= 
+                 190 a=1111111111111111, b=0000000000000000, c_in=0
+                 190 Expected Result : sum=16'hffff, c_out=0 
+                 190 Real Result : sum=1111111111111111, c_out=0 
+                 190 ================================= 
+                 230 a=1111111111111111, b=0000000000000000, c_in=1
+                 230 Expected Result : sum=0, c_out=1 
+                 230 Real Result : sum=0000000000000000, c_out=1 
+                 230 ================================= 
+                 270 a=1111111111111111, b=1111111111111111, c_in=0
+                 270 Expected Result : sum=16'hfffe, c_out=1 
+                 270 Real Result : sum=1111111111111110, c_out=1 
+                 270 ================================= 
+                 310 a=1111111111111111, b=1111111111111111, c_in=1
+                 310 Expected Result : sum=16'hffff, c_out=1 
+                 310 Real Result : sum=1111111111111111, c_out=1 
+                 310 ================================= 
+                 350 a=0000000000001011, b=0000000000001001, c_in=0
+                 350 Expected Result : sum=20, c_out=0 
+                 350 Real Result : sum=0000000000010100, c_out=0 
+                 350 ================================= 
+                 390 a=0000000000111111, b=0000000001011000, c_in=1
+                 390 Expected Result : sum=152, c_out=0 
+                 390 Real Result : sum=0000000010011000, c_out=0 
+                 390 ================================= 
+                 430 a=0000011000000000, b=0000101100101001, c_in=1
+                 430 Expected Result : sum=4394, c_out=0 
+                 430 Real Result : sum=0001000100101010, c_out=0 
+                 430 ================================= 
+                 470 a=0100001110001001, b=1001110111001110, c_in=0
+                 470 Expected Result : sum=57687, c_out=0 
+                 470 Real Result : sum=1110000101010111, c_out=0 
+                 470 ================================= 
+                 510 a=0111001001101001, b=1100010011011110, c_in=1
+                 510 Expected Result : sum=14152, c_out=1 
+                 510 Real Result : sum=0011011101001000, c_out=1 
+                 510 ================================= 
+                 530 Testing finished!! The test result is PASS ^_____^ 
+Simulation complete via $finish(1) at time 530 NS + 0
+./rca16_test.v:131 	$finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Aug 27, 2022 at 10:22:15 CST  (total: 00:00:03)

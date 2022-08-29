@@ -1,0 +1,48 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Aug 27, 2022 at 18:07:18 CST
+ncverilog
+	-f run.f
+		fsm_test.v
+		fsm_bspd.v
+		+access+r
+Recompiling... reason: file './fsm_bspd.v' is newer than expected.
+	expected: Sat Aug 27 18:04:38 2022
+	actual:   Sat Aug 27 18:07:15 2022
+file: fsm_bspd.v
+	module worklib.fsm_bspd:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.fsm_bspd:v <0x5f271053>
+			streams:   3, words:  1090
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  2       2
+		Registers:               13      13
+		Scalar wires:             4       -
+		Always blocks:           10      10
+		Initial blocks:           3       3
+		Pseudo assignments:       1       1
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.test_fsm:v
+Loading snapshot worklib.test_fsm:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'fsm.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+************************************************************
+                4013 Finish testing with no error
+************************************************************
+Simulation complete via $finish(1) at time 4013 NS + 0
+./fsm_test.v:50 	$finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Aug 27, 2022 at 18:07:49 CST  (total: 00:00:31)

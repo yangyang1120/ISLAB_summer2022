@@ -1,0 +1,13 @@
+s1(24Aug2022:19:59:18):  ncverilog fa_test.v fa.v +access+r 
+s2(24Aug2022:20:00:49):  ncverilog fa_test.v fa.v +access+r 
+s3(24Aug2022:20:03:46):  ncverilog fa_test.v fa.v +access+r 
+s4(24Aug2022:20:08:58):  ncverilog fa_test.v fa.v +access+r 
+s5(24Aug2022:23:21:28):  ncverilog -f run.f 
+s6(24Aug2022:23:22:38):  ncverilog -f run.f 
+s7(24Aug2022:23:26:20):  ncverilog -f run.f 
+s8(26Aug2022:21:40:46):  ncverilog -f run.f 
+s9(27Aug2022:00:09:18):  ncverilog -f run.f 
+s10(27Aug2022:00:28:48):  ncverilog -f run.f 
+s11(27Aug2022:00:31:21):  ncverilog -f run.f 
+s12(27Aug2022:00:32:08):  ncverilog -f run.f 
+s13(27Aug2022:02:32:11):  ncverilog -f run.f 

@@ -1,0 +1,9 @@
+*design* DebussyLib (btIdent Verdi_Q-2020.03)
+Command arguments:
+    +define+verilog
+    -v testfixture.v
+    -v LBP.v
+
+*Error* no source file
+
+Total	1 error(s),   0 warning(s)
